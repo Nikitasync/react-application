@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.app_container{
+  display: grid;
+  width: 960px;
+  margin: 0 auto;
+
+  grid-template-areas: 
+    'h h'
+    'n c'
+  ;
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+}
+
+.app_header {
+  background-color: rgb(255, 115, 0);
+  grid-area: h;
+}
+.app_header img{
+  width: 50px;
+  height: 40px;
+}
+
+.app_navbar {
+  background-color: rgb(0, 214, 64);
+  grid-area: n;
+}
+
+.app_content {
+  background-color: rgb(238, 255, 0);
+  grid-area: c;
+}
